@@ -1,13 +1,13 @@
-# Проект воркшопа для урока по SQLAlchemy + Flask 
-Курс "Профессия: Python-разработчик", PRODUCTSTAR
+# Проект SQLAlchemy + Flask 
 
 
 
 ## Запуск проекта
 1) Устанавливаем виртуальное окружение
 ```
-    virtualenv env
-    source env/bin/activate
+python -m venv venv
+
+venv\Scripts\Activate
 ```
 2) Устанавливаем зависимости
 ```
@@ -15,5 +15,6 @@
 ```
 3) Запускаем приложение
 ```
-    SQLALCHEMY_DATABASE_URI="sqlite:///project.db" ./app.py
+     $env:SQLALCHEMY_DATABASE_URI="sqlite:///project.db"
+    flask --app app.py run
 ```
