@@ -16,20 +16,6 @@ with app.app_context():
     db.drop_all()
     db.create_all()
 
-    # fill DB with testing data(fixtures)
-    #scifi = Genre(name="Научная фатасткиа")
-    #db.session.add(scifi)
-    #horror = Department(name="Ужас")
-    #db.session.add(horror)
-
-    #three_body = Book(fullname="Задача трех тел", genre=scifi)
-    #db.session.add(three_body)
-    #horror_book = Book(fullname="Кошмар на улице вязов", genre=horror)
-    #db.session.add(horror_book)
-    #dison = Book(fullname="Сфера дайсона", genre=scifi)
-    #db.session.add(dison)
-
-
     fantasy = Genre(name="Фэнтези")
     scifi = Genre(name="Научная фантастика")
     drama = Genre(name="Драма")
