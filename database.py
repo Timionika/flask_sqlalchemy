@@ -6,7 +6,7 @@ db = SQLAlchemy()
 
 class Book(db.Model):
    id = db.Column(db.Integer, primary_key=True)
-   name = db.Column(db.String, nullable=True)
+   name = db.Column(db.String, nullable=False)
    added = db.Column(db.DateTime, nullable=False, default=func.now())
 
    genre_id = db.Column(db.Integer, db.ForeignKey("genre.id", ondelete='SET NULL'))
